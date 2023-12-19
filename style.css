@@ -1,0 +1,116 @@
+@import  url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 0px 15px 5px black;
+}
+
+.ui {
+    display: flex;
+    border-radius: 20px;
+    width: 375px;
+    height: 475px;
+    flex-direction: column;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#screen {
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    background-color: rgba(121, 121, 121, 0.787);
+    border-radius: 10px;
+    font-size: 25px;
+    width: 370px;
+    height: 110px;
+    color: rgb(0, 166, 0);
+    overflow: hidden;
+}
+
+.input {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+    color: rgb(0, 161, 0);
+    word-wrap: wrap;
+    padding: 5px;
+}
+
+.result {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+    color: white;
+    padding: 5px;
+}
+
+.num-btn-pad {
+    flex: 3;
+    border: 2px solid rgb(17, 17, 17);
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    flex-direction: row;
+}
+
+button {
+    border-radius: 100px;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(66, 66, 66);
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    box-shadow: 5px 5px 8px black;
+    transition: .2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: rgb(202, 202, 202);
+    color: rgb(21, 21, 21);
+}
+
+.equal-btn {
+    width: 150px;
+    background-color: indianred;
+}
+
+.opp-btn, .clear-btn, .delete-btn {
+    background-color: coral;
+}
